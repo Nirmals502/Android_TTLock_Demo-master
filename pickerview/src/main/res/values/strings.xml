@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="pickerview_cancel">cancel</string>
+    <string name="pickerview_submit">Submit</string>
+    <string name="pickerview_year">year</string>
+    <string name="pickerview_month">month</string>
+    <string name="pickerview_day">day</string>
+    <string name="pickerview_hours">Time</string>
+    <string name="pickerview_minutes">Minute</string>
+    <string name="pickerview_seconds">second</string>
+</resources>

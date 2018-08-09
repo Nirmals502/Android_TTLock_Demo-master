@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107701607129",
+    "firebase_url": "https://smarttouch-4cc07.firebaseio.com",
+    "project_id": "smarttouch-4cc07",
+    "storage_bucket": "smarttouch-4cc07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107701607129:android:78f32d9091ab285b",
+        "android_client_info": {
+          "package_name": "com.example.ttlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107701607129-n089dlqg340g51t0pu3il84h9bb1svo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ttlock",
+            "certificate_hash": "07a563834ffe2b43db2a92dae59fb866e41d103f"
+          }
+        },
+        {
+          "client_id": "107701607129-og52cnhdaumr9qf810q0ffd4guos6pc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfFOzwUFcjVG_TgLUzLbmd79pfinMaMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107701607129-og52cnhdaumr9qf810q0ffd4guos6pc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
