@@ -11,18 +11,11 @@
         <item>Click Unlock</item>
         <item>Set Admin Code</item>
         <item>Set Erase-all Code</item>
-        <item>Set Lock Time</item>
         <item>Reset Password</item>
-        <item>Reset EKey</item>
         <item>Reset Lock</item>
-        <item>Read Lock Log</item>
-        <item>Read Lock Time</item>
-        <item>Send e-Key</item>
-        <item>Get Password</item>
+        <item>Get ekey</item>
 
-        <item>Pad Lock Up(Only Pad Lock)</item>
-        <item>Pad Lock Down</item>
-        <item>Device Firmware Upgrade</item>
+
     </string-array>
 
 

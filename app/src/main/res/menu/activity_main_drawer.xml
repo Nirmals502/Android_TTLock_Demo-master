@@ -2,9 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/contactus"
+            android:title="Contact Us" />
         <item
             android:id="@+id/nav_auth"
-            android:title="Authorization" />
+            android:icon="@drawable/logout"
+            android:title="Logout" />
 
 
         <!--<item-->

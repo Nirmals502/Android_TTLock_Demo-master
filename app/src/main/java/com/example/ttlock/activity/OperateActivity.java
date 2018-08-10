@@ -135,10 +135,10 @@ public class OperateActivity extends BaseActivity {
 //                title = "设置清空码";
                 hit = getString(R.string.words_input_clear_code);
                 break;
-            case Operate.SET_LOCK_TIME:
-//                title = "设置锁时间";
-                hit = getString(R.string.words_input_time);
-                break;
+//            case Operate.SET_LOCK_TIME:
+////                title = "设置锁时间";
+//                hit = getString(R.string.words_input_time);
+//                break;
             case Operate.SEND_EKey:
                 hit = getString(R.string.words_input_receiver_name);
                 break;
@@ -180,15 +180,15 @@ public class OperateActivity extends BaseActivity {
                         bleSession.setPassword(content);
                         bleSession.setLockmac(mKey.getLockMac());
                         break;
-                    case Operate.SET_LOCK_TIME:
-                        if(mTTLockAPI.isConnected(mKey.getLockMac())) {
-                            mTTLockAPI.setLockTime(null, openid, curKey.getLockVersion(), curKey.getUnlockKey(), System.currentTimeMillis(), curKey.getLockFlagPos(), curKey.getAesKeystr(), curKey.getTimezoneRawOffset());
-                        } else {
-                            mTTLockAPI.connect(mKey.getLockMac());
-                            bleSession.setOperation(Operation.SET_LOCK_TIME);
-                            bleSession.setLockmac(mKey.getLockMac());
-                        }
-                        break;
+//                    case Operate.SET_LOCK_TIME:
+//                        if(mTTLockAPI.isConnected(mKey.getLockMac())) {
+//                            mTTLockAPI.setLockTime(null, openid, curKey.getLockVersion(), curKey.getUnlockKey(), System.currentTimeMillis(), curKey.getLockFlagPos(), curKey.getAesKeystr(), curKey.getTimezoneRawOffset());
+//                        } else {
+//                            mTTLockAPI.connect(mKey.getLockMac());
+//                            bleSession.setOperation(Operation.SET_LOCK_TIME);
+//                            bleSession.setLockmac(mKey.getLockMac());
+//                        }
+//                        break;
                     case Operate.RESET_KEYBOARD_PASSWORD:
                         if(mTTLockAPI.isConnected(mKey.getLockMac())) {
                             mTTLockAPI.resetKeyboardPassword(null, openid, curKey.getLockVersion(), curKey.getAdminPs(), curKey.getUnlockKey(), curKey.getLockFlagPos(), curKey.getAesKeystr());
@@ -198,15 +198,15 @@ public class OperateActivity extends BaseActivity {
                             bleSession.setLockmac(mKey.getLockMac());
                         }
                         break;
-                    case Operate.RESET_EKEY:
-                        if(mTTLockAPI.isConnected(mKey.getLockMac())) {//如果当前处于连接状态，则直接发送重置钥匙指令
-                            mTTLockAPI.resetEKey(null, openid, curKey.getLockVersion(), curKey.getAdminPs(), curKey.getLockFlagPos() + 1, curKey.getAesKeystr());
-                        } else {//主动连接锁 并设置操作标志
-                            mTTLockAPI.connect(mKey.getLockMac());
-                            bleSession.setOperation(Operation.RESET_EKEY);
-                            bleSession.setLockmac(mKey.getLockMac());
-                        }
-                        break;
+//                    case Operate.RESET_EKEY:
+//                        if(mTTLockAPI.isConnected(mKey.getLockMac())) {//如果当前处于连接状态，则直接发送重置钥匙指令
+//                            mTTLockAPI.resetEKey(null, openid, curKey.getLockVersion(), curKey.getAdminPs(), curKey.getLockFlagPos() + 1, curKey.getAesKeystr());
+//                        } else {//主动连接锁 并设置操作标志
+//                            mTTLockAPI.connect(mKey.getLockMac());
+//                            bleSession.setOperation(Operation.RESET_EKEY);
+//                            bleSession.setLockmac(mKey.getLockMac());
+//                        }
+//                        break;
                     case Operate.RESET_LOCK:
                         if(mTTLockAPI.isConnected(mKey.getLockMac())) {//如果当前处于连接状态，则直接发送重置锁指令
                             mTTLockAPI.resetLock(null, openid, curKey.getLockVersion(), curKey.getAdminPs(), curKey.getUnlockKey(), curKey.getLockFlagPos() + 1, curKey.getAesKeystr());

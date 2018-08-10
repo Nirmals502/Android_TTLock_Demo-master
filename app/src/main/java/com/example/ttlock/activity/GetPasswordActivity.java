@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -70,6 +71,9 @@ public class GetPasswordActivity extends BaseActivity {
     @BindView(R.id.showPwd)
     TextView showPwd;
 
+    @BindView(R.id.imageView3)
+    ImageView back;
+
     private TimePickerView timePickerView;
 
     private WheelViewDialog wheelViewDialog;
@@ -108,6 +112,13 @@ public class GetPasswordActivity extends BaseActivity {
         keyboardPwdType = KeyboardPasswdType.PERMENANT;
         loopLayout.setVisibility(View.GONE);
         endTimeLayout.setVisibility(View.GONE);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
     }

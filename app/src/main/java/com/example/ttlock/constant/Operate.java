@@ -20,22 +20,22 @@ public class Operate {
     /**
      * 设置锁时间
      */
-    public static final int SET_LOCK_TIME = 3;
+  //  public static final int SET_LOCK_TIME = 3;
 
     /**
      * 重置键盘密码
      */
-    public static final int RESET_KEYBOARD_PASSWORD = 4;
+    public static final int RESET_KEYBOARD_PASSWORD = 3;
 
     /**
      * 重置电子钥匙
      */
-    public static final int RESET_EKEY = 5;
+   // public static final int RESET_EKEY = 5;
 
     /**
      * 重置锁(恢复出厂设置)
      */
-    public static final int RESET_LOCK = 6;
+    public static final int RESET_LOCK = 4;
 
     /**
      * 获取操作日志
@@ -55,7 +55,7 @@ public class Operate {
     /**
      * 获取密码
      */
-    public static final int GET_PASSWORD = 10;
+    public static final int GET_PASSWORD = 5;
 
     /**
      * 车位锁升

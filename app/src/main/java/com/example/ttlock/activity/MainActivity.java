@@ -165,6 +165,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     void onItemClick(int position) {
         curKey = keys.get(position);
         if (curKey.isAdmin()) {
+            curKey.getLockName();
+            Toast.makeText(this, curKey.getLockName(), Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, OperateActivity.class);
             startActivity(intent);
         } else toast(getString(R.string.words_not_admin));

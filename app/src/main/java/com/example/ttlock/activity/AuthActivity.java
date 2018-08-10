@@ -37,7 +37,7 @@ public class AuthActivity extends BaseActivity implements View.OnClickListener {
 
     EditText user;
     EditText pwd;
-    private ProgressDialog dialog;
+    private ProgressDialog dialog,dialog2;
     String status = "", Message = "", Device_id = "", Acess_tocken = "";
     TextView text_regstr_link;
     String regId="";
@@ -147,10 +147,10 @@ public class AuthActivity extends BaseActivity implements View.OnClickListener {
 
             // mProgressHUD = ProgressHUD.show(Login_Screen.this, "Connecting", true, true, this);
             // Showing progress dialog
-            dialog = new ProgressDialog(AuthActivity.this);
-            dialog.setMessage("Please wait...");
-            dialog.setCancelable(false);
-            dialog.show();
+            dialog2 = new ProgressDialog(AuthActivity.this);
+            dialog2.setMessage("Please wait...");
+            dialog2.setCancelable(false);
+            dialog2.show();
 
 
         }
@@ -215,7 +215,7 @@ public class AuthActivity extends BaseActivity implements View.OnClickListener {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
             // Dismiss the progress dialog
-            dialog.dismiss();
+            dialog2.dismiss();
 
             if (status.contentEquals("true")) {
                 SharedPreferences shared = getSharedPreferences("Smart_touch", MODE_PRIVATE);

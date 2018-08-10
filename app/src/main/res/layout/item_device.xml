@@ -8,19 +8,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:textSize="24sp"
+        android:background="@android:drawable/editbox_background"
         android:text="dasdas"
-        android:textColor="@android:color/darker_gray"/>
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/device_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:textSize="12sp"
-        android:text="dasdas"
         android:layout_below="@id/device_name"
-        android:textColor="@android:color/darker_gray"/>
+        android:layout_marginLeft="15dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="dasdas"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/device_add_able"

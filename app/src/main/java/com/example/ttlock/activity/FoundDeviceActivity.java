@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.ttlock.MyApplication;
@@ -23,6 +24,7 @@ public class FoundDeviceActivity extends BaseActivity implements AdapterView.OnI
 
     private List<ExtendedBluetoothDevice> devices;
     private ListView listView;
+    ImageView img_back;
     private FoundDeviceAdapter foundDeviceAdapter;
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
@@ -50,9 +52,16 @@ public class FoundDeviceActivity extends BaseActivity implements AdapterView.OnI
     private void init() {
         devices = new ArrayList<>();
         listView = getView(R.id.list);
+        img_back = getView(R.id.imageView3);
         foundDeviceAdapter = new FoundDeviceAdapter(this, devices);
         listView.setAdapter(foundDeviceAdapter);
         listView.setOnItemClickListener(this);
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         registerReceiver(mReceiver, getIntentFilter());
     }
 
