@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.example.ttlock.activity.FoundDeviceActivity">
+    tools:context="com.example.Smarttouch.activity.FoundDeviceActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

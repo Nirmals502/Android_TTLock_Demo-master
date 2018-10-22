@@ -27,7 +27,7 @@
         android:layout_alignParentRight="true"
         android:gravity="center"/>
 
-    <com.example.ttlock.wheel.WheelView
+    <com.example.Smarttouch.wheel.WheelView
         android:id="@+id/circle_mode_wheelwheelview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

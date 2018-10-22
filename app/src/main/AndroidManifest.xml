@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ttlock">
+    package="com.example.Smarttouch">
 
     <!-- 蓝牙权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -23,33 +23,59 @@
             android:name="com.ttlock.bl.sdk.service.DfuService"
             android:exported="true" />
 
-        <activity android:name=".activity.BaseActivity" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".activity.FoundDeviceActivity" />
-        <activity android:name=".activity.BaseListActivity" />
-        <activity android:name=".activity.AuthActivity" />
+        <activity
+            android:name=".activity.FoundDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BaseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AuthActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.OperateActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.KeyListActivity" />
-        <activity android:name=".activity.GetPasswordActivity" />
-        <activity android:name=".activity.GatewayActivity" />
-        <activity android:name=".activity.GatewayListActivity" />
-        <activity android:name=".activity.UnderGatewayLockList" />
-        <activity android:name=".activity.KeyboardPwdListActivity" />
-        <activity android:name=".activity.DeviceFirmwareUpdateActivity" />
-        <activity android:name=".activity.splash_screen">
+        <activity
+            android:name=".activity.GetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GatewayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GatewayListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UnderGatewayLockList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KeyboardPwdListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeviceFirmwareUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.splash_screen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signup_screen"></activity>
+        <activity
+            android:name=".signup_screen"
+            android:screenOrientation="portrait"></activity>
         <!-- Firebase Notifications -->
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>

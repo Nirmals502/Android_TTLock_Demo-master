@@ -3,8 +3,8 @@
     <data>
         <variable
             name="keyboardPwd"
-            type="com.example.ttlock.model.KeyboardPwd" />
-        <import type="com.example.ttlock.utils.DateUitl" />
+            type="com.example.Smarttouch.model.KeyboardPwd" />
+        <import type="com.example.Smarttouch.utils.DateUitl" />
     </data>
     <LinearLayout
         android:orientation="horizontal" android:layout_width="match_parent"

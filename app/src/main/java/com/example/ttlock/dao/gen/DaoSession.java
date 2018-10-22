@@ -8,7 +8,7 @@ import org.greenrobot.greendao.database.Database;
 import org.greenrobot.greendao.identityscope.IdentityScopeType;
 import org.greenrobot.greendao.internal.DaoConfig;
 
-import com.example.ttlock.model.Key;
+import com.example.Smarttouch.model.Key;
 
 import com.example.ttlock.dao.gen.KeyDao;
 
